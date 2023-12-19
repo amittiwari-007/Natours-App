@@ -1,0 +1,15 @@
+services:
+  - name: natours
+    type: web
+    buildCommand: npm run build
+    startCommand: npm start
+    env:
+      - key: DATABASE
+        value: mongodb+srv://amiteurr:amit25112002@cluster0.pei4udf.mongodb.net/natours?retryWrites=true&w=majority
+      - key: JWT_SECRET
+        value: my-ultra-secure-and-ultra-long-secret
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: JWT_COOKIE_EXPIRES_IN
+        value: 7
+        
