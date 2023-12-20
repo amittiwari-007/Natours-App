@@ -9,6 +9,7 @@
     "prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
     "watch": "esbuild ./public/js/index.js --bundle --outfile=./public/js/bundle.js --watch",
+    "prebuild": "npm i esbuild",
     "build": "esbuild ./public/js/index.js --bundle --minify --outfile=./public/js/bundle.js"
   },
   "repository": {
